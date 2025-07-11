@@ -163,39 +163,44 @@
     }
 
     /* About / 關於我 兩欄排版 */
-    .about-section {
-      display: flex;
-      align-items: center;
-      gap: 30px;
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 0 0 40px 0;
-    }
-    .about-text {
-      flex: 1;
-      font-size: 15px;
-      line-height: 1.7;
-      color: #222;
-      font-family: 'Noto Sans TC', sans-serif;
-    }
-    .about-text h3 {
-      margin-bottom: 20px;
-    }
-    .about-photo {
-      flex-shrink: 0;
-      width: 180px;
-      height: 180px;
-      overflow: hidden;
-      border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    }
-    .about-photo img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
-    }
+ /* About / 關於我 兩欄排版 */
+.about-section {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 0 40px 0;
+}
+.about-text {
+  flex: 1;
+  font-size: 15px;
+  line-height: 1.7;
+  color: #222;
+  font-family: 'Noto Sans TC', sans-serif;
+  text-align: left;       /* 加這行讓文字末行齊左 */
+}
+.about-text h3 {
+  margin-bottom: 20px;
+}
+.about-photo {
+  flex-shrink: 0;
+  width: 180px;
+  height: 180px;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 
+  display: flex;            /* 加這兩行讓照片垂直水平置中 */
+  justify-content: center;
+  align-items: center;
+}
+.about-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
     /* Contact / 聯絡方式 */
     .contact-section {
       display: flex;
@@ -280,18 +285,18 @@
         <li>・創意大會時報金犢獎 最佳攝影項｜入圍｜</li>
         <li>・創意大會時報金犢獎 最佳文案對白項｜入圍｜</li>
         <li>・吃果籽拜樹頭感恩微電影競賽｜最佳人氣獎｜</li>
-        <li>・吃果籽拜樹頭感恩微電影競賽 學生組｜優選獎｜</li>
+        <li>・吃果籽拜樹頭感恩微電影競賽｜優選獎｜</li>
 
         <li class="year">2021</li>
         <li>・全國高級中等學校設計群 110年專題及創意競賽｜入圍｜</li>
-        <li>・政府專案 牆面大圖設計｜民生社區中心管理E高化作業 - 爬樓梯積分活動｜</li>
-        <li>・金犢獎 國際競賽｜入圍｜旺旺孝親三字經公益廣告設計獎－平面類</li>
+        <li>・政府專案 牆面大圖設計｜民生社區中心管理E高化作業｜</li>
+        <li>・金犢獎 國際競賽｜入圍｜旺旺孝親三字經公益廣告設計獎</li>
 
         <li class="year">2022</li>
         <li>・金犢獎 國際競賽｜入圍｜</li>
 
         <li class="year">2024</li>
-        <li>・金犢獎 國際競賽｜入圍｜技術類 - 文案對白項｜</li>
+        <li>・金犢獎 國際競賽｜入圍｜技術類｜</li>
       </ul>
     </section>
 
