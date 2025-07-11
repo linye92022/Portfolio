@@ -221,6 +221,26 @@
       color: #000;
       text-decoration: none;
     }
+    @media (max-width: 600px) {
+      .about-section {
+        flex-direction: column;
+        text-align: center;
+      }
+      .about-photo {
+        width: 140px;
+        height: 140px;
+      }
+      .about-text {
+        font-size: 14px;
+      }
+      h3 {
+        font-size: 16px;
+      }
+      .experience-section .entry {
+        padding: 16px 18px;
+      }
+    }
+
   </style>
 </head>
 <body>
@@ -366,25 +386,7 @@
         </svg>
         <span> 0983-177-228</span>
       </div>
-   @media (max-width: 600px) {
-  .about-section {
-    flex-direction: column;
-    text-align: center;
-  }
-  .about-photo {
-    width: 140px;
-    height: 140px;
-  }
-  .about-text {
-    font-size: 14px;
-  }
-  h3 {
-    font-size: 16px;
-  }
-  .experience-section .entry {
-    padding: 16px 18px;
-  }
-}
+   
     </section>
 
   </div>
